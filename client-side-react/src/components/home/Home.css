@@ -1,0 +1,44 @@
+.chart-container,
+.load {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.chart-container {
+  background-color: white;
+}
+
+.load {
+  width: 96%;
+  height: 500px;
+  background-size: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255) 0px,
+    rgb(255, 255, 255, 0.5) 100px,
+    rgba(255, 255, 255) 200px
+  );
+  animation: shine 0.7s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15px;
+  color: steelblue;
+  letter-spacing: 4px;
+  font-weight: 800;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

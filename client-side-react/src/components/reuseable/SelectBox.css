@@ -1,0 +1,20 @@
+.selectBox {
+  border-radius: 3px;
+  width: 175px;
+  margin: 25px;
+  height: 30px;
+  padding-left: 15%;
+}
+
+option {
+  padding: 10px;
+}
+
+.selectBox:focus {
+  border-color: mediumblue;
+  box-shadow: 0 0 5px mediumblue;
+}
+
+.dateBox {
+  height: 60px;
+}
