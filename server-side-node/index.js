@@ -38,7 +38,7 @@ mongoose.connection.collections["covidData"]
 async function dumpData() {
   for (let i = 1; i <= 24; i++) {
     await csvtojson()
-      .fromFile(`./CovidData/raw_data${i}.csv`)
+      .fromFile(`../CovidData/raw_data${i}.csv`)
       .then(async (data) => {
         await covidData
           .insertMany(data)
